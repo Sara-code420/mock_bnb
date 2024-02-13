@@ -1,0 +1,88 @@
+article {
+  max-width: 60rem;
+  margin: 5rem auto;
+  border-radius: 16px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 2rem;
+  text-align: left;
+}
+
+
+section:first-of-type {
+  margin-top: 2rem;
+}
+
+section {
+  margin-left: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #000;
+}
+
+address span {
+  font-weight: bold;
+}
+
+#details h2 {
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+#details > p {
+  color: #555;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#details footer {
+  color: #777;
+}
+
+#details footer a {
+  color: #350490;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#rent ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#rent label {
+  font-weight: bold;
+  color: #46424d;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+#rent input {
+  font: inherit;
+  width: 100%;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#rent-actions {
+  margin-top: 1.5rem;
+}
+
+#error-message {
+  margin-bottom: 1rem;
+  color: #880824;
+}
+
+#property-cover{
+  width: 600px;
+  height: 400px;
+  padding: 20px;
+  margin-top: 2rem;
+}

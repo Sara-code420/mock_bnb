@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel, Rent & Live </title>
+    <link rel="stylesheet" href="{% static 'bnb/styles/base.css'%}">
+    <link rel="stylesheet" href="{% static 'bnb/styles/property-details.css'%}">
+</head>
+<body>   
+    <header id="main-header">
+        <nav><a href="/bnb" id="main-logo">Mockbnb</a></nav>
+        <h1>{{ property.name }}</h1>
+    </header>
+    <main>
+        <article>
+            <img src="{{ property.coverImage }}" id='property-cover'alt="picture not available">
+
+            <section id="guests">
+                <h2>Number of Guests</h2>
+                <address>This property can have <span>{{property.numGuests}} guests.</span></address>
+                <img src="{{ property.secondaryImage }}" id='property-cover'alt="picture not available">
+            </section>
+
+            <section id="details">
+                <h2>Property Details</h2>
+                <ul>
+                    <li><strong>Type:</strong> {{ property.type }}</li>
+                    <li><strong>Location:</strong> {{ property.location }}</li>
+                    <li><strong>Price per Night:</strong> ${{ property.price }}</li>
+                    <li><strong>Number of Bedrooms:</strong> {{ property.numBedrooms }}</li>
+                    <li><strong>Number of Bathrooms:</strong> {{ property.numBathrooms }}</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>About Property</h2>
+                <p>{{ property.description }}</p>
+                <footer>
+                    <p>Need more details? Please <a href="">contact the admin</a> (but please don't spam us)</p>
+                </footer>
+            </section>
+
+            <section id="rent">
+                <h2>Join Us!</h2>
+                FORM
+            </section>
+        </article>
+    </main>
+</body>
+</html>
