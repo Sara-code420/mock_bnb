@@ -2,7 +2,7 @@
  A simple outlook using Django to replicate hotels/stays website
 
  Project Documentation 
- Documentation 
+  
 
 main page url : http://127.0.0.1:8000/bnb/
 admin page url : http://127.0.0.1:8000/admin/
